@@ -13,8 +13,8 @@ def manage_load(arr)
       distribute_load(arr,indx, balanced_load) if load > balanced_load
     end
     t += 1
-    #puts "Server loads at time t=#{t}"
-    #puts arr.join(",")
+    puts "Server loads at time t=#{t}"
+    puts arr.join(",")
   end while arr.any? {|ser_ld| ser_ld < balanced_load}
   puts t
 end
